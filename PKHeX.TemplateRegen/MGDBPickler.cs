@@ -1,4 +1,8 @@
-﻿namespace PKHeX.TemplateRegen;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+
+namespace PKHeX.TemplateRegen;
 
 public class MGDBPickler(string PKHeXRepoPath, string EventGalleryRepoPath)
 {
@@ -38,7 +42,7 @@ public class MGDBPickler(string PKHeXRepoPath, string EventGalleryRepoPath)
 
     private void Bin(string path, params string[] type)
     {
-        var dest = Path.Combine(PKHeXRepoPath, "mgdb");
+        var dest = Path.Combine(PKHeXRepoPath, @"PKHeX.Core\Resources\legality\mgdb");
         foreach (var z in type)
             BinWrite(dest, path, z);
     }

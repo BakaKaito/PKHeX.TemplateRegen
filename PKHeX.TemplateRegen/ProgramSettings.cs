@@ -7,7 +7,7 @@ public sealed partial class ProgramSettingsContext : JsonSerializerContext;
 
 public class ProgramSettings
 {
-    public string RepoPathPKHeX { get; set; } = @"C:\Users\BK\source\repos\PKHeX\PKHeX.Core\Resources\legality";
+    public string RepoPathPKHeX { get; set; } = @"C:\Users\BK\source\repos\PKHeX\";
     public string RepoPathEvGal { get; set; } = @"C:\Users\BK\source\repos\EventsGallery";
-    public string RepoPathPGET { get; set; } = @"C:\Users\BK\source\repos\PoGoEncTool\Resources";
+    public string RepoPathPGET { get; set; } = @"C:\Users\BK\source\repos\PoGoEncTool";
 }
