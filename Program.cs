@@ -11,7 +11,9 @@ if (!Directory.Exists(settings.RepoPathPKHeX))
 }
 
 var mgdb = new MGDBPickler(settings.RepoPathPKHeX, settings.RepoPathEvGal);
+var pget = new POGOPickler(settings.RepoPathPKHeX, settings.RepoPathPGET);
 mgdb.Update();
+pget.Update();
 
 Console.WriteLine("Done!");
 Console.ReadKey();

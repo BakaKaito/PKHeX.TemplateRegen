@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="PKHeX.Core" Version="25.2.23" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="PoGoEncTool.Core">
+      <HintPath>.\deps\PoGoEncTool.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
