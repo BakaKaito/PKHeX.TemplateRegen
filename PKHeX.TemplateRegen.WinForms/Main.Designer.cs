@@ -145,13 +145,13 @@
             // 
             // StatusLabel
             // 
-            StatusLabel.AutoSize = true;
             StatusLabel.BackColor = Color.Transparent;
             StatusLabel.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             StatusLabel.Location = new Point(8, 350);
             StatusLabel.Name = "StatusLabel";
-            StatusLabel.Size = new Size(172, 30);
+            StatusLabel.Size = new Size(582, 30);
             StatusLabel.TabIndex = 11;
+            StatusLabel.Text = "Ready";
             // 
             // Main
             // 
