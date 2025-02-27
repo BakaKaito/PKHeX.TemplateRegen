@@ -40,6 +40,9 @@
             PGETPathLabel = new Label();
             Update = new Button();
             StatusLabel = new Label();
+            L_Version = new Label();
+            CB_PullLatestPGET = new CheckBox();
+            CB_PullLatestEG = new CheckBox();
             SuspendLayout();
             // 
             // PKHeXPathBox
@@ -134,7 +137,7 @@
             Update.BackColor = Color.FromArgb(85, 85, 226);
             Update.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             Update.ForeColor = Color.White;
-            Update.Location = new Point(8, 293);
+            Update.Location = new Point(10, 381);
             Update.Margin = new Padding(1);
             Update.Name = "Update";
             Update.Size = new Size(568, 56);
@@ -147,18 +150,51 @@
             // 
             StatusLabel.BackColor = Color.Transparent;
             StatusLabel.Font = new Font("Segoe UI", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            StatusLabel.Location = new Point(8, 350);
+            StatusLabel.Location = new Point(10, 438);
             StatusLabel.Name = "StatusLabel";
-            StatusLabel.Size = new Size(582, 30);
+            StatusLabel.Size = new Size(522, 32);
             StatusLabel.TabIndex = 11;
             StatusLabel.Text = "Ready";
+            // 
+            // L_Version
+            // 
+            L_Version.AutoSize = true;
+            L_Version.Font = new Font("Segoe UI", 7F);
+            L_Version.Location = new Point(538, 445);
+            L_Version.Name = "L_Version";
+            L_Version.Size = new Size(45, 25);
+            L_Version.TabIndex = 12;
+            L_Version.Text = "v1.1";
+            // 
+            // CB_PullLatestPGET
+            // 
+            CB_PullLatestPGET.AutoSize = true;
+            CB_PullLatestPGET.Location = new Point(12, 289);
+            CB_PullLatestPGET.Name = "CB_PullLatestPGET";
+            CB_PullLatestPGET.Size = new Size(401, 36);
+            CB_PullLatestPGET.TabIndex = 13;
+            CB_PullLatestPGET.Text = "Pull Latest PoGoEncTool Commits";
+            CB_PullLatestPGET.UseVisualStyleBackColor = true;
+            // 
+            // CB_PullLatestEG
+            // 
+            CB_PullLatestEG.AutoSize = true;
+            CB_PullLatestEG.Location = new Point(12, 331);
+            CB_PullLatestEG.Name = "CB_PullLatestEG";
+            CB_PullLatestEG.Size = new Size(412, 36);
+            CB_PullLatestEG.TabIndex = 14;
+            CB_PullLatestEG.Text = "Pull Latest Events Gallery Commits";
+            CB_PullLatestEG.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Control;
-            ClientSize = new Size(588, 382);
+            ClientSize = new Size(588, 470);
+            Controls.Add(CB_PullLatestEG);
+            Controls.Add(CB_PullLatestPGET);
+            Controls.Add(L_Version);
             Controls.Add(Update);
             Controls.Add(PGETPathLabel);
             Controls.Add(EventsGalleryPathLabel);
@@ -192,5 +228,8 @@
         private Label PGETPathLabel;
         private Button Update;
         private Label StatusLabel;
+        private Label L_Version;
+        private CheckBox CB_PullLatestPGET;
+        private CheckBox CB_PullLatestEG;
     }
 }

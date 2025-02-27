@@ -34,15 +34,22 @@ namespace PKHeXBrowse.TemplateRegen.WinForms
                 }
 
                 // Update local repos
-                StatusLabel.Text = "Updating Events Gallery Repo...";
-                await Task.Delay(500);
-                UpdateEventsGalleryRepo(Repo.EventsGallery);
+                if (CB_PullLatestEG.Checked)
+                {
+                    StatusLabel.Text = "Updating Events Gallery Repo...";
+                    await Task.Delay(500);
+                    UpdateEventsGalleryRepo(Repo.EventsGallery);
+                }
 
-                StatusLabel.Text = "Updating PoGoEncTool Repo...";
-                await Task.Delay(500);
-                UpdateEventsGalleryRepo(Repo.PoGoEncTool);
+                if (CB_PullLatestPGET.Checked)
+                {
+                    StatusLabel.Text = "Updating PoGoEncTool Repo...";
+                    await Task.Delay(500);
+                    UpdateEventsGalleryRepo(Repo.PoGoEncTool);
+                }
 
                 // Update pkl files
+                StatusLabel.Text = "Gathering Files...";
                 var mgdb = new MGDBPickler(settings.RepoPathPKHeX, settings.RepoPathEvGal);
                 var PGET = new POGOPickler(settings.RepoPathPKHeX, settings.RepoPathPGET);
 
