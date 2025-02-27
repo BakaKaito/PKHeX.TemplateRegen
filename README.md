@@ -4,7 +4,7 @@
 Updates PKHeX Legality Binaries (Pickles)
 
 ## Before You Begin
-This tool requires the following repositories to be local and updated on your PC
+This tool requires the following repositories to be local on your PC
 - [PKHeX](https://github.com/kwsch/PKHeX/)
 - [Events Gallary](https://github.com/projectpokemon/EventsGallery)
 - [PGET](https://github.com/projectpokemon/PoGoEncTool)
